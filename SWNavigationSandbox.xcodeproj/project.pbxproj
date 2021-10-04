@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		C824862A2709969600E7CA70 /* SWNavigationSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82486292709969600E7CA70 /* SWNavigationSandboxApp.swift */; };
-		C824862C2709969600E7CA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824862B2709969600E7CA70 /* ContentView.swift */; };
 		C824862E2709969800E7CA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C824862D2709969800E7CA70 /* Assets.xcassets */; };
 		C82486312709969800E7CA70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82486302709969800E7CA70 /* Preview Assets.xcassets */; };
+		C824863E270997C600E7CA70 /* CourseForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824863D270997C600E7CA70 /* CourseForYouView.swift */; };
+		C8248640270997DB00E7CA70 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824863F270997DB00E7CA70 /* CourseView.swift */; };
+		C8248642270997E700E7CA70 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8248641270997E700E7CA70 /* LessonView.swift */; };
+		C82486442709980200E7CA70 /* WizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82486432709980200E7CA70 /* WizardView.swift */; };
+		C8DD24BE2709E9F1009CCFB6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24BD2709E9F1009CCFB6 /* WelcomeView.swift */; };
+		C8DD24C0270A19D2009CCFB6 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24BF270A19D2009CCFB6 /* Page.swift */; };
+		C8DD24C4270AA6E1009CCFB6 /* ReadScoreAbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24C3270AA6E1009CCFB6 /* ReadScoreAbilityView.swift */; };
+		C8DD24C6270AA949009CCFB6 /* YesNoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24C5270AA949009CCFB6 /* YesNoResultView.swift */; };
+		C8DD24C8270AAA6E009CCFB6 /* CourseTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24C7270AAA6E009CCFB6 /* CourseTypeView.swift */; };
+		C8DD24CA270ABAA4009CCFB6 /* SongChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24C9270ABAA4009CCFB6 /* SongChoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C82486262709969600E7CA70 /* SWNavigationSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWNavigationSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82486292709969600E7CA70 /* SWNavigationSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavigationSandboxApp.swift; sourceTree = "<group>"; };
-		C824862B2709969600E7CA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C824862D2709969800E7CA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82486302709969800E7CA70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C824863D270997C600E7CA70 /* CourseForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseForYouView.swift; sourceTree = "<group>"; };
+		C824863F270997DB00E7CA70 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		C8248641270997E700E7CA70 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		C82486432709980200E7CA70 /* WizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardView.swift; sourceTree = "<group>"; };
+		C8DD24BD2709E9F1009CCFB6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		C8DD24BF270A19D2009CCFB6 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		C8DD24C3270AA6E1009CCFB6 /* ReadScoreAbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadScoreAbilityView.swift; sourceTree = "<group>"; };
+		C8DD24C5270AA949009CCFB6 /* YesNoResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoResultView.swift; sourceTree = "<group>"; };
+		C8DD24C7270AAA6E009CCFB6 /* CourseTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTypeView.swift; sourceTree = "<group>"; };
+		C8DD24C9270ABAA4009CCFB6 /* SongChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongChoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +70,18 @@
 			isa = PBXGroup;
 			children = (
 				C82486292709969600E7CA70 /* SWNavigationSandboxApp.swift */,
-				C824862B2709969600E7CA70 /* ContentView.swift */,
 				C824862D2709969800E7CA70 /* Assets.xcassets */,
 				C824862F2709969800E7CA70 /* Preview Content */,
+				C824863D270997C600E7CA70 /* CourseForYouView.swift */,
+				C824863F270997DB00E7CA70 /* CourseView.swift */,
+				C8248641270997E700E7CA70 /* LessonView.swift */,
+				C8DD24BD2709E9F1009CCFB6 /* WelcomeView.swift */,
+				C82486432709980200E7CA70 /* WizardView.swift */,
+				C8DD24C7270AAA6E009CCFB6 /* CourseTypeView.swift */,
+				C8DD24C3270AA6E1009CCFB6 /* ReadScoreAbilityView.swift */,
+				C8DD24C5270AA949009CCFB6 /* YesNoResultView.swift */,
+				C8DD24BF270A19D2009CCFB6 /* Page.swift */,
+				C8DD24C9270ABAA4009CCFB6 /* SongChoiceView.swift */,
 			);
 			path = SWNavigationSandbox;
 			sourceTree = "<group>";
@@ -137,8 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C824862C2709969600E7CA70 /* ContentView.swift in Sources */,
+				C8DD24CA270ABAA4009CCFB6 /* SongChoiceView.swift in Sources */,
+				C8248640270997DB00E7CA70 /* CourseView.swift in Sources */,
+				C8DD24C6270AA949009CCFB6 /* YesNoResultView.swift in Sources */,
+				C8248642270997E700E7CA70 /* LessonView.swift in Sources */,
+				C82486442709980200E7CA70 /* WizardView.swift in Sources */,
+				C824863E270997C600E7CA70 /* CourseForYouView.swift in Sources */,
+				C8DD24C0270A19D2009CCFB6 /* Page.swift in Sources */,
+				C8DD24BE2709E9F1009CCFB6 /* WelcomeView.swift in Sources */,
+				C8DD24C4270AA6E1009CCFB6 /* ReadScoreAbilityView.swift in Sources */,
 				C824862A2709969600E7CA70 /* SWNavigationSandboxApp.swift in Sources */,
+				C8DD24C8270AAA6E009CCFB6 /* CourseTypeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
