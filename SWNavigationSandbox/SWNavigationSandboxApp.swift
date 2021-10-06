@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SWNavigationSandboxApp: App {
-    var body: some Scene {
-        WindowGroup {
-            WelcomeView()
-        }
-    }
+	@StateObject var wizardElement = WizardElement()
+	
+	var body: some Scene {
+		WindowGroup {
+			WelcomeView().environmentObject(wizardElement)
+		}
+	}
 }

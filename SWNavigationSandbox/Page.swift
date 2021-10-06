@@ -8,8 +8,12 @@
 import Foundation
 
 enum Page {
-		case wizard
-		case learn
-		//case course
-		//case lesson
+	case wizard
+	case learn //CoursesForYou
+	case course
+	case lesson
+	case courseType
+	case readScoreAbility
+	case yesNoResult
+	case songChoice
 }

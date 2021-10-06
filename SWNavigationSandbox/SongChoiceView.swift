@@ -9,18 +9,22 @@ import SwiftUI
 
 struct SongChoiceView: View {
 	@State private var isCurrentView = true
+	@EnvironmentObject var wizardElement: WizardElement
+	
 	var body: some View {
 		if isCurrentView == true {
 			VStack{
 				Text("Song choice")
 				HStack{
 					Button("Sure"){
+						wizardElement.yesNoType = .songChoiceYes
 						withAnimation{
 							self.isCurrentView = false
 						}
 						
 					}
 					Button("Humm"){
+						wizardElement.yesNoType = .songChoiceNo
 						withAnimation{
 							self.isCurrentView = false
 						}
@@ -38,6 +42,6 @@ struct SongChoiceView: View {
 
 struct SongChoiceView_Previews: PreviewProvider {
 	static var previews: some View {
-		SongChoiceView()
+		SongChoiceView().environmentObject(WizardElement())
 	}
 }

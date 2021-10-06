@@ -18,24 +18,17 @@ struct WelcomeView: View {
 					DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 						withAnimation{
 							self.showWelcome = false
-							self.currentPage = .learn
+							self.currentPage = .wizard
 						}
 					}
 				}
 		}else{
-			switch currentPage {
-			case .wizard:
-				WizardView()
-					.transition(.scale)
-			case .learn:
+			if currentPage == .learn {
 				CourseForYouView()
 					.transition(.scale)
-			/*case .course:
-				CourseView()
-					.transition(.slide)
-			case .lesson:
-				LessonView()
-					.transition(.slide)*/
+			}else{
+				WizardView()
+					.transition(.scale)
 			}
 		}
 	}
