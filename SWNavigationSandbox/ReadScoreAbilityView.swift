@@ -10,12 +10,32 @@ import SwiftUI
 struct ReadScoreAbilityView: View {
 	@State private var isCurrentView = true
 	@EnvironmentObject var wizardElement: WizardElement
+	@State private var toViewName:Page = .wizard
 	
 	var body: some View {
 		if self.isCurrentView == true{
 			VStack{
-				Text("Is this score difficult to understand?")
-					.font(.title2)
+				/*Text("Is this score difficult to understand?")
+					.font(.title2)*/
+				Menu {
+					Button("Start wizard", action: {
+						self.toViewName = .wizard
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+					Button("My courses", action: {
+						self.toViewName = .learn
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+				} label: {
+					Text("Is this score difficult to understand?")
+						.font(.title2)
+						.foregroundColor(Color.black)
+						
+				}
 				Text("[\(wizardElement.instrument)] [\(wizardElement.getPrettyCourseTypeName(courseType: wizardElement.courseType))]")
 				Rectangle()
 					.frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -24,6 +44,7 @@ struct ReadScoreAbilityView: View {
 				HStack{
 					Button("Yes"){
 						wizardElement.yesNoType = .readScoreAbilityYes
+						toViewName = .yesNoResult
 						withAnimation{
 							self.isCurrentView = false
 						}
@@ -31,6 +52,7 @@ struct ReadScoreAbilityView: View {
 					}
 					Button("No"){
 						wizardElement.yesNoType = .readScoreAbilityNo
+						toViewName = .yesNoResult
 						withAnimation{
 							self.isCurrentView = false
 						}
@@ -39,8 +61,14 @@ struct ReadScoreAbilityView: View {
 				}
 			}
 		}else{
-			YesNoResultView()
-				.transition(.scale)
+			if toViewName == .wizard {
+				WizardView().transition(.scale)
+			}else if toViewName == .learn {
+				CourseForYouView().transition(.scale)
+			}else{
+				YesNoResultView()
+					.transition(.scale)
+			}
 		}
 	}
 	

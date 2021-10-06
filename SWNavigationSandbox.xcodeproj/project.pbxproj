@@ -17,6 +17,7 @@
 		C8CE186E270B77E700EBBB1A /* WizardElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE186D270B77E700EBBB1A /* WizardElement.swift */; };
 		C8CE1870270BFCB300EBBB1A /* CourseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE186F270BFCB300EBBB1A /* CourseType.swift */; };
 		C8CE1872270DA23700EBBB1A /* YesNoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1871270DA23700EBBB1A /* YesNoType.swift */; };
+		C8CE1874270E136500EBBB1A /* MyMenuStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE1873270E136400EBBB1A /* MyMenuStyle.swift */; };
 		C8DD24BE2709E9F1009CCFB6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24BD2709E9F1009CCFB6 /* WelcomeView.swift */; };
 		C8DD24C0270A19D2009CCFB6 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24BF270A19D2009CCFB6 /* Page.swift */; };
 		C8DD24C4270AA6E1009CCFB6 /* ReadScoreAbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD24C3270AA6E1009CCFB6 /* ReadScoreAbilityView.swift */; };
@@ -37,6 +38,7 @@
 		C8CE186D270B77E700EBBB1A /* WizardElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardElement.swift; sourceTree = "<group>"; };
 		C8CE186F270BFCB300EBBB1A /* CourseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseType.swift; sourceTree = "<group>"; };
 		C8CE1871270DA23700EBBB1A /* YesNoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoType.swift; sourceTree = "<group>"; };
+		C8CE1873270E136400EBBB1A /* MyMenuStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuStyle.swift; sourceTree = "<group>"; };
 		C8DD24BD2709E9F1009CCFB6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		C8DD24BF270A19D2009CCFB6 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		C8DD24C3270AA6E1009CCFB6 /* ReadScoreAbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadScoreAbilityView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				C8DD24BF270A19D2009CCFB6 /* Page.swift */,
 				C8CE186F270BFCB300EBBB1A /* CourseType.swift */,
 				C8CE1871270DA23700EBBB1A /* YesNoType.swift */,
+				C8CE1873270E136400EBBB1A /* MyMenuStyle.swift */,
 			);
 			path = SWNavigationSandbox;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				C8DD24CA270ABAA4009CCFB6 /* SongChoiceView.swift in Sources */,
 				C8CE1870270BFCB300EBBB1A /* CourseType.swift in Sources */,
 				C8CE186E270B77E700EBBB1A /* WizardElement.swift in Sources */,
+				C8CE1874270E136500EBBB1A /* MyMenuStyle.swift in Sources */,
 				C8248640270997DB00E7CA70 /* CourseView.swift in Sources */,
 				C8DD24C6270AA949009CCFB6 /* YesNoResultView.swift in Sources */,
 				C8248642270997E700E7CA70 /* LessonView.swift in Sources */,

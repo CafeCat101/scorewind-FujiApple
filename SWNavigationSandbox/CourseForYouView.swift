@@ -9,40 +9,45 @@ import SwiftUI
 
 struct CourseForYouView: View {
 	@State private var isCurrentView = true
-	@State private var toViewName = "Course"
+	@State private var toViewName:Page = .learn
 	
 	var body: some View {
 		if isCurrentView == true {
 			VStack{
-				Text("course for you")
-					.font(.title)
+				Menu {
+					Button("Start wizard", action: {
+						self.toViewName = .wizard
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+				} label: {
+					Text("My courses")
+						.font(.title)
+						.foregroundColor(Color.black)
+						
+				}
 				Button("To course view"){
 					withAnimation{
 						self.isCurrentView = false
-						self.toViewName = "Course"
+						self.toViewName = .course
 					}
 				}
 				
 				Button("To lesson view"){
 					withAnimation{
 						self.isCurrentView = false
-						self.toViewName = "Lesson"
+						self.toViewName = .lesson
 					}
 				}
 				Spacer()
-				Button("To wizard view"){
-					withAnimation{
-						self.isCurrentView = false
-						self.toViewName = "Wizard"
-					}
-				}
 			}
 		}else{
 			switch self.toViewName{
-			case "Course":
+			case .course:
 				CourseView()
 					.transition(.scale)
-			case "Lesson":
+			case .lesson:
 				LessonView()
 					.transition(.scale)
 			default:

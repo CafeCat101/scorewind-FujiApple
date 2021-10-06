@@ -24,8 +24,27 @@ struct YesNoResultView: View {
 	var body: some View {
 		if isCurrentView == true {
 			VStack{
-				Text("yes no result")
-					.font(.title2)
+				/*Text("yes no result")
+					.font(.title2)*/
+				Menu {
+					Button("Start wizard", action: {
+						self.toViewName = .wizard
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+					Button("My courses", action: {
+						self.toViewName = .learn
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+				} label: {
+					Text("yes no result")
+						.font(.title2)
+						.foregroundColor(Color.black)
+						
+				}
 				Rectangle()
 					.frame(height: screenSize.height/2.5)
 					.overlay(Text("Score viewer")
@@ -115,6 +134,12 @@ struct YesNoResultView: View {
 					.transition(.scale)
 			case .readScoreAbility:
 				ReadScoreAbilityView()
+					.transition(.scale)
+			case .learn:
+				CourseForYouView()
+					.transition(.scale)
+			case .wizard:
+				WizardView()
 					.transition(.scale)
 			default:
 				WizardView()

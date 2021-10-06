@@ -15,8 +15,25 @@ struct CourseTypeView: View {
 	var body: some View {
 		if isCurrentView == true {
 			VStack{
-				Text("choose course type")
-					.font(.title2)
+				Menu {
+					Button("Start wizard", action: {
+						self.toViewName = .wizard
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+					Button("My courses", action: {
+						self.toViewName = .learn
+						withAnimation{
+							self.isCurrentView = false
+						}
+					})
+				} label: {
+					Text("Choose course type")
+						.font(.title2)
+						.foregroundColor(Color.black)
+						
+				}
 				Text("[\(wizardElement.instrument)]")
 				Spacer()
 				Button("Path"){
