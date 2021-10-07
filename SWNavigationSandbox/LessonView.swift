@@ -20,12 +20,6 @@ struct LessonView: View {
 		if self.isCurrentView == true{
 			VStack{
 				Menu {
-					Button("My courses", action: {
-						self.toViewName = .learn
-						withAnimation{
-							self.isCurrentView = false
-						}
-					})
 					Button("Previous course", action: {
 						self.toViewName = .course
 						withAnimation{
@@ -53,12 +47,24 @@ struct LessonView: View {
 							self.isCurrentView = false
 						}
 					})
-					Button("Start wizard", action: {
-						self.toViewName = .wizard
-						withAnimation{
-							self.isCurrentView = false
-						}
-					})
+					Menu{
+						Button("My courses", action: {
+							self.toViewName = .learn
+							withAnimation{
+								self.isCurrentView = false
+							}
+						})
+						Button("Start wizard", action: {
+							self.toViewName = .wizard
+							withAnimation{
+								self.isCurrentView = false
+							}
+						})
+					} label: {
+						Text("Jump to")
+							.font(.title2)
+							.foregroundColor(Color.black)
+					}
 				} label: {
 					Text(self.lessonName)
 						.font(.title2)
