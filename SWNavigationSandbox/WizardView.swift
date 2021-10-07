@@ -32,27 +32,65 @@ struct WizardView: View {
 				}
 				Spacer()
 				Text("Which instrument do you want to play?")
-				Button("Guitar"){
-					wizardElement.instrument = "guitar"
-					self.toViewName = .courseType
-					withAnimation{
-						self.isCurrentView = false
+					.font(.headline)
+				
+				HStack{
+					Button(action:{
+						wizardElement.instrument = "guitar"
+						self.toViewName = .courseType
+						withAnimation{
+							self.isCurrentView = false
+						}
+					}){
+						Circle()
+							.strokeBorder(Color.black,lineWidth: 1)
+							.background(Circle().foregroundColor(Color.white))
+							.frame(width:100,height:100)
+							.overlay(
+								Image("instrument-guitar-icon")
+									.resizable()
+									.scaleEffect(0.6)
+							)
+					}
+					
+					Button(action:{
+						wizardElement.instrument = "violin"
+						self.toViewName = .courseType
+						withAnimation{
+							self.isCurrentView = false
+						}
+					}){
+						Circle()
+							.strokeBorder(Color.black,lineWidth: 1)
+							.background(Circle().foregroundColor(Color.white))
+							.frame(width:100,height:100)
+							.overlay(
+								Image("instrument-violin-icon")
+									.resizable()
+									.scaleEffect(0.6)
+							)
 					}
 				}
-				Button("Violin"){
-					wizardElement.instrument = "violin"
-					self.toViewName = .courseType
-					withAnimation{
-						self.isCurrentView = false
-					}
-				}
-				Button("Piano"){
+				
+				
+				Button(action:{
 					wizardElement.instrument = "piano"
 					self.toViewName = .courseType
 					withAnimation{
 						self.isCurrentView = false
 					}
+				}){
+					Circle()
+						.strokeBorder(Color.black,lineWidth: 1)
+						.background(Circle().foregroundColor(Color.white))
+						.frame(width:100,height:100)
+						.overlay(
+							Image("instrument-piano-icon")
+								.resizable()
+								.scaleEffect(0.6)
+						)
 				}
+				
 				Spacer()
 			}
 			
