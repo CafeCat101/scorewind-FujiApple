@@ -52,12 +52,6 @@ struct CourseTypeView: View {
 					}
 				}
 				Spacer()
-				Button("Switch instrument"){
-					self.toViewName = .wizard
-					withAnimation{
-						self.isCurrentView = false
-					}
-				}
 			}
 		}else{
 			if self.toViewName == .wizard{
